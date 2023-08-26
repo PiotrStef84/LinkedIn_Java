@@ -10,7 +10,7 @@ public class s00_04 {
         System.out.println(findMaximum(1, 1, 9));
         System.out.println(findMaximum(1, 9, 9));
 
-        System.out.println("*****************************");
+        System.out.println("*");
         System.out.println(findMaximum2(1, 9, 21));
     }
 
@@ -27,7 +27,7 @@ public class s00_04 {
 
         return c;
     }
-
+    // Optimized version of the algorithm, that eliminate unnecessary comparisons present in previous method
     public static int findMaximum2(int a, int b, int c){
         int max = a;
 
