@@ -1,6 +1,6 @@
 package Java_Algorithms.String;
 
-public class s01_01 {
+public class e01_01 {
 
     public static void main(String[] args) {
 
