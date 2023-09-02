@@ -6,10 +6,15 @@ public class e01_06 {
         // 1. String Algorithms
         // Create algorithm-driven strings in Java.
 
-        System.out.println(reverse(""));
-        System.out.println(reverse(null));
-        System.out.println(reverse("EROL"));
-        System.out.println(reverse("unacceptable"));
+//        System.out.println(reverse(""));
+//        System.out.println(reverse(null));
+//        System.out.println(reverse("EROL"));
+//        System.out.println(reverse("unacceptable"));
+
+        System.out.println(reverse2(""));
+        System.out.println(reverse2(null));
+        System.out.println(reverse2("ZOZZ"));
+        System.out.println(reverse2("Kozok"));
 
     }
 
@@ -33,7 +38,7 @@ public class e01_06 {
             return s;
         }
 
-        StringBuilder reversed = new StringBuilder();
+        StringBuilder reversed = new StringBuilder(s);
         return reversed.reverse().toString();
     }
 }
