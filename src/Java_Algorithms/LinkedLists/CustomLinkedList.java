@@ -12,4 +12,26 @@ public class CustomLinkedList {
         }
         System.out.println();
     }
+
+    // Using slow and fast node to find the middle node
+    // similar to algorithms challenges from Algo
+    public void deleteBackHalf(){
+
+        // base case to prevent null pointer ex, and exit function
+        if(head == null || head.next == null){
+            head = null;
+        }
+        Node slow = head;
+        Node fast = head;
+        Node prev = null;
+
+        while(fast != null && fast.next != null){
+            fast = fast.next.next;
+            prev = slow;       // using prev as a potential middle ... before incrementing slow
+            slow = slow.next;
+        }
+
+        // setting prev to null will delete half of the data
+        prev.next = null;
+    }
 }
