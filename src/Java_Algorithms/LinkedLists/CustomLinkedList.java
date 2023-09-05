@@ -42,19 +42,35 @@ public class CustomLinkedList {
         if(head == null || k == 0){
             return;
         }
-
-            Node first = head;
-            Node second = head;
+            // list = [a, b, c, d]; k = 2
+            Node first = head; // a
+            Node second = head; // a
 
             // incrementing second node until reaching kth item
             for(int i= 0; i < k; i++){
                 second = second.next;
                 if(second.next == null){
                     // k >= length of list
-                    head = head.next;
+                    if(i == k -1){
+                        //delete the firs element
+                        head = head.next;
+                    }
                     return;
                 }
             }
+
+            // Now the second node points to the Kth element from the head
+            // second = c
+
+            while(second.next != null){
+                first = first.next;
+                second = second.next;
+            }
+
+            // first = b
+            // second = d
+
+            first.next = first.next.next;
 
         }
 }
