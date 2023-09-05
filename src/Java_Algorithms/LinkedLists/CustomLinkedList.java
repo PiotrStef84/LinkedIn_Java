@@ -51,6 +51,8 @@ public class CustomLinkedList {
                 second = second.next;
                 if(second.next == null){
                     // k >= length of list
+                    head = head.next;
+                    return;
                 }
             }
 
