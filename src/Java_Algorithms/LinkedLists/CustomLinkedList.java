@@ -34,4 +34,25 @@ public class CustomLinkedList {
         // setting prev to null will delete half of the data
         prev.next = null;
     }
+
+    // Created for challenge
+    public void deleteKthNodeFromEnd(int k){
+
+        // covering the base case when the list is empty
+        if(head == null || k == 0){
+            return;
+        }
+
+            Node first = head;
+            Node second = head;
+
+            // incrementing second node until reaching kth item
+            for(int i= 0; i < k; i++){
+                second = second.next;
+                if(second.next == null){
+                    // k >= length of list
+                }
+            }
+
+        }
 }

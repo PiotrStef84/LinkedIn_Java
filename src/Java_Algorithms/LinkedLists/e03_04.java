@@ -21,5 +21,6 @@ public class e03_04 {
         linkedList.displayContents();
         linkedList.deleteBackHalf();  // deleting half of the list
         linkedList.displayContents();
+
     }
 }
