@@ -6,7 +6,7 @@ import java.util.Queue;
 public class e04_03 {
     public static void main(String[] args) {
 
-        // 4.3. Java Algorithms
+        // 4.3. Java Algorithms - Queue and Stack Algorithms
         // Queue algorithms: Generate binary numbers
 
         printBinary(10);
@@ -22,6 +22,8 @@ public class e04_03 {
             return;
         }
         Queue<Integer> queue = new LinkedList<>();
+
+        // adding the first binary number
         queue.add(1);
         for(int i = 0; i < n; i++){
             int current = queue.remove();
