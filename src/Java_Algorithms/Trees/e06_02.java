@@ -5,6 +5,15 @@ public class e06_02 {
 
         // 6.2. Tree Algorithms
         // Binary trees in Java
-        Node test = new Node();
+
+        Node rootNode = new Node();
+        rootNode.setData(2);
+
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.root = rootNode;
+
+        tree.insert(1);
+        tree.insert(3);
+        tree.insert(4);
     }
 }

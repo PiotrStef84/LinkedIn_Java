@@ -1,9 +1,9 @@
 package Java_Algorithms.Trees;
 
 public class Node {
-    private Node left;
-    private Node right;
-    private int data;
+     Node left;
+     Node right;
+     int data;
 
     public Node() {
     }
