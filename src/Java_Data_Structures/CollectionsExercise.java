@@ -12,18 +12,19 @@ public class CollectionsExercise {
     }
 
     void addToStartOfLinkedList(LinkedList<Integer> numbers, int i) {
+        numbers.addFirst(i);
 
     }
 
     void removeItemFromTopOfStack(Deque<Integer> stack) {
-
+            stack.pop();
     }
 
     void removeItemFromFrontOfQueue(Queue<Integer> queue) {
-
+        queue.poll();
     }
 
     void addItemToTreeSet(Set<String> set, String item) {
-
+        set.add(item);
     }
 }
