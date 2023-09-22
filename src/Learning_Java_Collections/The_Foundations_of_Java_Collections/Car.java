@@ -1,5 +1,7 @@
 package Learning_Java_Collections.The_Foundations_of_Java_Collections;
 
+import java.util.Objects;
+
 public class Car {
 
 	// 2.8. The equals method
@@ -15,6 +17,24 @@ public class Car {
 		this.make = make;
 		this.model = model;
 		this.mileage = mileage;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+
+		Car c = (Car) o;
+		System.out.format("Comparing %s %s with %s %s %n",
+				this.make, this.model, c.make, c.model);
+
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Car car = (Car) o;
+		return Objects.equals(make, car.make) && Objects.equals(model, car.model);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(make, model);
 	}
 
 	public String getMake() {
