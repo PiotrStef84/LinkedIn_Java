@@ -6,6 +6,9 @@ import java.util.Collection;
 
 public class RoomService {
 
+	// 2.9 Challenge
+
+
 	// 1. Declare a Collection to store Room Inventory
 	Collection<Room> c;
 
@@ -49,6 +52,7 @@ public class RoomService {
 	// 6. Remove the provided Room from the Room Inventory
 
 		// For this test to pass it was important to override equals method in the room class
+		// Overriding will allow to use value base comparison when looking for element to remove
 		this.c.remove(room);
 
 
