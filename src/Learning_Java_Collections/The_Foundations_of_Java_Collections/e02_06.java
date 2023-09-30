@@ -23,5 +23,7 @@ public class e02_06 {
 
         Collection c2 = new ArrayList(); //Same Collection Type, Different Element Type
         c2.add(new Room("Cambridge", "Suite", 6, 250.0));
+
+
     }
 }

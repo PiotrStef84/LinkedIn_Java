@@ -1,9 +1,12 @@
 package Learning_Java_Collections.The_Foundations_of_Java_Collections;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class RoomServiceTest {
 
@@ -46,6 +49,7 @@ class RoomServiceTest {
 
     @Test
     void testRemoveRoom() {
+
 
         this.service.removeRoom(new Room("Victoria", "Suite", 5, 225.00));
 

@@ -1,5 +1,7 @@
 package Learning_Java_Collections.The_Foundations_of_Java_Collections;
 
+import java.util.Objects;
+
 public class Room {
 
     private String name;
@@ -15,6 +17,19 @@ public class Room {
         this.type = type;
         this.capacity = capacity;
         this.rate = rate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Room room = (Room) o;
+        return name.equals(room.name) && type.equals(room.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, type);
     }
 
     public String getName() {

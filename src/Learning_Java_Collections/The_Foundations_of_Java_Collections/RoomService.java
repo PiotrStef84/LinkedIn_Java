@@ -1,6 +1,7 @@
 package Learning_Java_Collections.The_Foundations_of_Java_Collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 public class RoomService {
@@ -33,16 +34,24 @@ public class RoomService {
 	
 	// 5. Add the Rooms provided in the Array to the Room Inventory
 
-		for(int i= 0; i< rooms.length; i++){
-			c.add(rooms[i]);
-		}
+		// crude solution, but first that came to mind - using a loop to add each element.
+			//for(int i= 0; i< rooms.length; i++){
+			//	c.add(rooms[i]);
+			//}
+
+		// better way -> using a dedicated addAll method and converting array to the list to be added.
+		this.c.addAll(Arrays.asList(rooms));
 
 	}
-	
+
 	public void removeRoom(Room room) {
-		
+
 	// 6. Remove the provided Room from the Room Inventory
-	c.remove(room);
+
+		// For this test to pass it was important to override equals method in the room class
+		this.c.remove(room);
+
+
 
 	}
 
