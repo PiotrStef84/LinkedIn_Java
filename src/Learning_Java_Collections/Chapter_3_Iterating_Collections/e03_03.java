@@ -6,6 +6,9 @@ import java.util.Collection;
 
 public class e03_03 {
 
+    // Learning Java Collections
+    // 3.3. Modifying collections while iterating.
+
     public static void main(String[] args) {
 
         Room cambridge = new Room("Cambridge", "Premiere Room", 4, 175.00);
@@ -17,6 +20,8 @@ public class e03_03 {
         oxford.setPetFriendly(true);
         victoria.setPetFriendly(true);
 
+        // This code will cause ConcurrentModificationException - an exception that is thrown when modifying
+        // collection while iterating through it.
         for(Room room : rooms) {
 
             if(room.isPetFriendly()) {
