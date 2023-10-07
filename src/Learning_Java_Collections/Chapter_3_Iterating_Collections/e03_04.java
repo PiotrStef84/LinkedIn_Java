@@ -3,6 +3,8 @@ package Learning_Java_Collections.Chapter_3_Iterating_Collections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class e03_04 {
     public static void main(String[] args) {
@@ -23,6 +25,22 @@ public class e03_04 {
             }
 
         }
+
+
+        // streams are a pipeline through the elements flow
+        rooms.stream()
+                .filter(new Predicate<Room>() {
+                    @Override
+                    public boolean test(Room room) {
+                        System.out.format("Testing %s with result %b%n", room.getName(), room.isPetFriendly());
+                        return room.isPetFriendly();
+                    }
+                }).forEach(new Consumer<Room>() {
+                    @Override
+                    public void accept(Room room) {
+                        System.out.println(room.getName());
+                    }
+                });
 
     }
 }

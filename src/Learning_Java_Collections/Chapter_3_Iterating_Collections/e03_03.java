@@ -41,7 +41,7 @@ public class e03_03 {
         }
 
         // remove all gathered rooms by using the bulk operator
-        rooms.removeAll(removesRooms);
+        //rooms.removeAll(removesRooms);
 
         // Another way of removing element of the collection
         Iterator<Room> iterator = rooms.iterator();
@@ -55,6 +55,8 @@ public class e03_03 {
         }
 
         //System.out.println(rooms);
+
+        System.out.println("Remaining rooms");
 
         rooms.stream().forEach(room -> {
             System.out.println(room.getName());
