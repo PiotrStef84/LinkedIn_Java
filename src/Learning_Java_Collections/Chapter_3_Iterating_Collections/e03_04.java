@@ -9,6 +9,9 @@ import java.util.function.Predicate;
 public class e03_04 {
     public static void main(String[] args) {
 
+        // Learning Java Collections
+        // 3.4. Accessing collection elements with streams.
+
         Room cambridge = new Room("Cambridge", "Premiere Room", 4, 175.00);
         Room manchester = new Room("Manchester", "Suite", 5, 250.00);
         Room oxford = new Room("Oxford", "Suite", 5, 225.0);
