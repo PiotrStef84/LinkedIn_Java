@@ -3,6 +3,7 @@ package Learning_Java_Collections.Chapter_3_Iterating_Collections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 public class e03_06 {
 
@@ -20,14 +21,16 @@ public class e03_06 {
         oxford.setPetFriendly(true);
         victoria.setPetFriendly(true);
 
-        Collection<Room> petFriendlyRooms = new ArrayList<>();
-
-        rooms.stream()
+        // Using .collect terminal operation on a stream (our pipeline), it accepts collector
+        // all elements will be gathered by the collector and return
+        Collection<Room> petFriendlyRooms = rooms.stream()
                 .filter(Room::isPetFriendly)
-                .forEach(room -> petFriendlyRooms.add(room));
+                .collect(Collectors.toList());
 
+        // using .map function to get the string we need to print
         petFriendlyRooms.stream()
-                .forEach(r -> System.out.println(r.getName()));
+                .map(r -> r.getName())
+                .forEach(System.out::println);
 
     }
 }
