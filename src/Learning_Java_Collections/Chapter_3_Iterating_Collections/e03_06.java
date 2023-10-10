@@ -32,5 +32,12 @@ public class e03_06 {
                 .map(r -> r.getName())
                 .forEach(System.out::println);
 
+        // using another operation .mapToDouble and .sum
+        double total = petFriendlyRooms.stream()
+                .mapToDouble(Room::getRate)
+                .sum();
+
+        System.out.println("Total :" + total);
+
     }
 }
