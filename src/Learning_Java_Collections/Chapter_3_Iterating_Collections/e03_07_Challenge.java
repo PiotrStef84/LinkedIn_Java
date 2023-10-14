@@ -1,9 +1,6 @@
 package Learning_Java_Collections.Chapter_3_Iterating_Collections;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class e03_07_Challenge {
@@ -55,7 +52,20 @@ public class e03_07_Challenge {
 
         //Returns a new collection of rooms with a rate below the provided rate and that match the provided type
 
-        return null;
+            Collection<Room> newInventory = new LinkedHashSet<>();
+
+//            for(Room room : inventory){
+//
+//                if((room.getRate() < rate) && (Objects.equals(room.getType(), type))){
+//                    newInventory.add(room);
+//                }
+//            }
+
+            newInventory = inventory.stream().filter(room -> {
+              return   ((room.getRate() < rate) && room.getType().equals(type));
+            }).collect(Collectors.toList());
+
+        return newInventory;
 
     }
 
