@@ -20,13 +20,34 @@ public class e03_07_Challenge {
 
         //Reduces the rate of each room by the provided discount
 
+//            for (Room room: inventory) {
+//                room.setRate(room.getRate() * (1 - discount));
+//            }
+
+            inventory.stream().forEach(room -> {
+                room.setRate(room.getRate() * (1 - discount));
+            });
+
     }
 
         public Collection<Room> getRoomsByCapacity(final int requiredCapacity) {
 
         //Returns a new collection of rooms that meet or exceed the provided capacity
 
-        return null;
+            Collection<Room> newInventory = new LinkedHashSet<>();
+
+//            for(Room room : inventory){
+//
+//                if(room.getCapacity() >= requiredCapacity){
+//                    newInventory.add(room);
+//                }
+//            }
+
+            inventory.stream().filter(room -> {
+                return  (room.getCapacity() >= requiredCapacity);
+            }).forEach(room ->  newInventory.add(room));
+
+        return newInventory;
 
     }
 
