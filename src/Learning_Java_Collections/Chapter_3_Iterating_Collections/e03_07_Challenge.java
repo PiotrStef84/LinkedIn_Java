@@ -25,6 +25,9 @@ public class e03_07_Challenge {
                 room.setRate(room.getRate() * (1 - discount));
             });
 
+            // Solution provided by course - using build in iterator
+            //inventory.forEach(r -> r.setRate(r.getRate() * (1 - discount)));
+
     }
 
         public Collection<Room> getRoomsByCapacity(final int requiredCapacity) {
@@ -61,11 +64,17 @@ public class e03_07_Challenge {
 //                }
 //            }
 
-            newInventory = inventory.stream().filter(room -> {
-              return   ((room.getRate() < rate) && room.getType().equals(type));
-            }).collect(Collectors.toList());
+//            newInventory = inventory.stream().filter(room -> {
+//              return   ((room.getRate() < rate) && room.getType().equals(type));
+//            }).collect(Collectors.toList());
+//
+//        return newInventory;
 
-        return newInventory;
+        // Provided solution -> using filter twice
+        return this.inventory.stream()
+                .filter(r -> r.getRate() < rate)
+                .filter(r -> r.getType().equals(type))
+                .collect(Collectors.toList());
 
     }
 
