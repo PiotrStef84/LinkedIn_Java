@@ -1,5 +1,6 @@
 package Learning_Java_Collections.Chapter_5_List;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class e05_03 {
@@ -13,6 +14,8 @@ public class e05_03 {
         Guest maria = new Guest("Maria", "Doe", false);
         Guest sonia = new Guest("Sonia", "Doe", true);
         Guest siri = new Guest("Siri", "Doe", true);
+
+        List<Guest> checkinList = new ArrayList<>();
 
 
     }
