@@ -15,7 +15,9 @@ public class e05_03 {
         Guest sonia = new Guest("Sonia", "Doe", true);
         Guest siri = new Guest("Siri", "Doe", true);
 
-        List<Guest> checkinList = new ArrayList<>();
+        // Passing a number to declare with a larger initial capacity, default initial capacity is 10.
+        // This is useful, when adding many items to avoid initial resizing
+        List<Guest> checkinList = new ArrayList<>(100);
 
 
     }
