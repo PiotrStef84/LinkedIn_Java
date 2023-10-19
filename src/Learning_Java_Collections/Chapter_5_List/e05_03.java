@@ -19,6 +19,11 @@ public class e05_03 {
         // This is useful, when adding many items to avoid initial resizing
         List<Guest> checkinList = new ArrayList<>(100);
 
+        checkinList.add(john);
+        checkinList.add(maria);
+
+        print(checkinList);
+
 
     }
 
