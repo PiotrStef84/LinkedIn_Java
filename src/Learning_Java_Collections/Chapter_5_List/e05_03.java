@@ -24,6 +24,9 @@ public class e05_03 {
 
         print(checkinList);
 
+        checkinList.add(0, sonia);
+        print(checkinList);
+
 
     }
 
