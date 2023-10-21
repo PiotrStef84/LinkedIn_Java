@@ -27,6 +27,18 @@ public class e05_03 {
         checkinList.add(0, sonia);
         print(checkinList);
 
+        // one of the guest decides to enroll into the loyalty program
+        checkinList.get(2).setLoyaltyProgramMember(true);
+
+        // always forgetting about this trick .... use the List.of
+        checkinList.addAll(1, List.of(maria, siri));
+
+        // remove "duplicate" guest from the list
+        checkinList.remove(4);
+        print(checkinList);
+
+        System.out.println(checkinList.indexOf(john));
+
 
     }
 
