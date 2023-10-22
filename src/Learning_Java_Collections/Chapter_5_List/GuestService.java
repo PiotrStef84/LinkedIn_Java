@@ -28,6 +28,7 @@ public class GuestService {
 //				.collect(Collectors.toList());
 
 
+
 	}
 
 	public void checkIn(Guest guest) {
