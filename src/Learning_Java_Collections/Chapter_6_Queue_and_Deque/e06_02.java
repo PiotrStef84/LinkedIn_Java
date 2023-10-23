@@ -1,5 +1,8 @@
 package Learning_Java_Collections.Chapter_6_Queue_and_Deque;
 
+import java.util.ArrayDeque;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class e06_02 {
@@ -14,7 +17,22 @@ public class e06_02 {
         Guest sonia = new Guest("Sonia", "Doe", true); //loyalty program
         Guest siri = new Guest("Siri", "Doe", true); //loyalty program
 
+        Comparator<Guest> programComp = Comparator.comparing(Guest::isLoyaltyProgramMember).reversed();
 
+        Queue<Guest> checkingQueue = new PriorityQueue<>(programComp);
+        checkingQueue.offer(john);
+        checkingQueue.offer(bob);
+        checkingQueue.offer(sonia);
+        checkingQueue.offer(siri);
+
+
+        Guest guest = checkingQueue.poll();
+        print(checkingQueue);
+        System.out.println(guest);
+
+        Guest guest1 = checkingQueue.peek();
+        print(checkingQueue);
+        System.out.println(guest1);
     }
 
     public static void print(Queue<Guest> queue) {
