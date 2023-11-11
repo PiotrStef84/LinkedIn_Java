@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericMethods {
+
+    // Advanced Java Programming
+    // 2.2. Generic methods in Java
     static Character[] charArray = {'h', 'e', 'l', 'l', 'o'};
     static Integer[] intArray = {1, 2, 3, 4, 5};
     static Boolean[] boolArray = {true, false, true};
