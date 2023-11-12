@@ -11,6 +11,7 @@ public class GenericMethods {
     static Integer[] intArray = {1, 2, 3, 4, 5};
     static Boolean[] boolArray = {true, false, true};
 
+    // iterates through objects in an array and adds them to the list
     public static List arrayToList(Object[] array, List<Object> list) {
         for (Object object : array) {
             list.add(object);
