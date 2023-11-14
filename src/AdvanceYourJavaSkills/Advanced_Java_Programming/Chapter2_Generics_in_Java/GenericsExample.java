@@ -1,4 +1,4 @@
-package AdvanceYourJavaSkills.Advanced_Java_Programming;
+package AdvanceYourJavaSkills.Advanced_Java_Programming.Chapter2_Generics_in_Java;
 
 import java.util.ArrayList;
 import java.util.List;
