@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_7_Map.BookingService;
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_7_Map.Guest;
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_7_Map.Room;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_7_Map.BookingService;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_7_Map.Guest;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_7_Map.Room;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

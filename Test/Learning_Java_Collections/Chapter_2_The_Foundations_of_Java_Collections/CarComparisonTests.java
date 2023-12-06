@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Car;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Car;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

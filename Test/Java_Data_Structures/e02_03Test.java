@@ -1,13 +1,13 @@
 package Java_Data_Structures;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Java_Data_Structures.e02_03;
+import Getting_Started_as_a_Java_Developer.Java_Data_Structures.e02_03;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class e02_03Test {
 
-    Getting_Started_as_a_Java_Developer.Java_Algorithms.Java_Data_Structures.e02_03 e02_03 = new e02_03();
+    Getting_Started_as_a_Java_Developer.Java_Data_Structures.e02_03 e02_03 = new e02_03();
 
     @Test
     void arrayToUpperCase() {

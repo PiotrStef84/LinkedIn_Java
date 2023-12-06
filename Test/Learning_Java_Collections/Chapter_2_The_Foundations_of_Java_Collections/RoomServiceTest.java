@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Room;
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.RoomService;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Room;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.RoomService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

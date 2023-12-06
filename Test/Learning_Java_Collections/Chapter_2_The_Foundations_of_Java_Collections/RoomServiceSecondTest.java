@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Collection;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Room;
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.RoomServiceSecond;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.Room;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_2_The_Foundations_of_Java_Collections.RoomServiceSecond;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

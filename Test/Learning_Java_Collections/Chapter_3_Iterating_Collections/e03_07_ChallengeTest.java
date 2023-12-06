@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.Arrays;
 import java.util.Collection;
 
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_3_Iterating_Collections.Room;
-import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_3_Iterating_Collections.e03_07_Challenge;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_3_Iterating_Collections.Room;
+import Getting_Started_as_a_Java_Developer.Learning_Java_Collections.Chapter_3_Iterating_Collections.e03_07_Challenge;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
