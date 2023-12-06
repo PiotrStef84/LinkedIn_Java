@@ -1,5 +1,6 @@
 package Java_Data_Structures;
 
+import Getting_Started_as_a_Java_Developer.Java_Algorithms.Java_Data_Structures.CollectionsExercise;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;

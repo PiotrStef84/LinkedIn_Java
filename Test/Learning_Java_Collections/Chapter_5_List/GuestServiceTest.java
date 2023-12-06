@@ -1,5 +1,8 @@
 package Learning_Java_Collections.Chapter_5_List;
 
+import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_5_List.Guest;
+import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_5_List.GuestService;
+import Getting_Started_as_a_Java_Developer.Java_Algorithms.Learning_Java_Collections.Chapter_5_List.Room;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
