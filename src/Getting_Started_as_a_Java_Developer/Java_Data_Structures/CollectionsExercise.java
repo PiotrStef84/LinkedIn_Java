@@ -7,24 +7,24 @@ import java.util.Set;
 
 public class CollectionsExercise {
 
-    void addToEndOfLinkedList(LinkedList<Integer> numbers, int i) {
+    public void addToEndOfLinkedList(LinkedList<Integer> numbers, int i) {
         numbers.add(i);
     }
 
-    void addToStartOfLinkedList(LinkedList<Integer> numbers, int i) {
+    public void addToStartOfLinkedList(LinkedList<Integer> numbers, int i) {
         numbers.addFirst(i);
 
     }
 
-    void removeItemFromTopOfStack(Deque<Integer> stack) {
+    public void removeItemFromTopOfStack(Deque<Integer> stack) {
             stack.pop();
     }
 
-    void removeItemFromFrontOfQueue(Queue<Integer> queue) {
+    public void removeItemFromFrontOfQueue(Queue<Integer> queue) {
         queue.poll();
     }
 
-    void addItemToTreeSet(Set<String> set, String item) {
+    public void addItemToTreeSet(Set<String> set, String item) {
         set.add(item);
     }
 }
