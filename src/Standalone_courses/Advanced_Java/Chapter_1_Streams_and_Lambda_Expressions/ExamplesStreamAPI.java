@@ -2,6 +2,7 @@ package Standalone_courses.Advanced_Java.Chapter_1_Streams_and_Lambda_Expression
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ExamplesStreamAPI {
@@ -21,5 +22,18 @@ public class ExamplesStreamAPI {
 
         // Creating a Stream using Stream.of()
         Stream<String> namesOfStream = Stream.of("Ismael", "David", "Andreas");
+
+        List<String> moreNames = Arrays.asList("Nabeel", "Ali", "John", "Robert", "Arthur");
+
+//        moreNames.stream()
+//                .filter(name -> name.startsWith("A"))
+//                .map(String::toUpperCase)
+//                .forEach(System.out::println);
+
+
+        List<String> filteredNames =  moreNames.stream()
+                .filter(name -> name.startsWith("A"))
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
     }
 }
