@@ -35,5 +35,7 @@ public class ExamplesStreamAPI {
                 .filter(name -> name.startsWith("A"))
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
+
+        System.out.println(filteredNames);
     }
 }
