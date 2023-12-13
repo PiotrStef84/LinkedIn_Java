@@ -26,9 +26,10 @@ public class CodeChallenge {
     // Return the highest grade for the students with a specific major
     static int findAnswer(List<Student> students, String major) {
 
-        List<Student> newList = students.stream()
+        students.stream()
                 .filter(s -> s.getMajor().equals(major))
-                .collect(Collectors.toList());
+                .flatMap(s -> s.getGrades().values().stream())
+                .max(Integer::compareTo).orElseGet(() -> 0);
 
         return 0;
     }
