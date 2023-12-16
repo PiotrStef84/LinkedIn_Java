@@ -7,6 +7,9 @@ import java.util.stream.Collectors;
 
 public class CodeChallenge {
 
+    // Advanced Java: Hands-on with Streams, Lambda Expressions, Collections, Generics and More
+    // Code Challenge: Java streams and lambda expressions
+
     public static void main(String[] args) {
 
 
@@ -27,9 +30,9 @@ public class CodeChallenge {
     static int findAnswer(List<Student> students, String major) {
 
         students.stream()
-                .filter(s -> s.getMajor().equals(major))
-                .flatMap(s -> s.getGrades().values().stream())
-                .max(Integer::compareTo).orElseGet(() -> 0);
+                .filter(s -> s.getMajor().equals(major)) // Filter based on a given major
+                .flatMap(s -> s.getGrades().values().stream()) // flatten the streams of grades to one single stream
+                .max(Integer::compareTo).orElseGet(() -> 0); // find the max integer ... if there is no value found return 0
 
         return 0;
     }
