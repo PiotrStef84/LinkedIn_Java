@@ -11,11 +11,13 @@ public class GrossPayCalculator {
         int hours = 40;
 
         //2. Get the hourly pay rate
-        int payRate;
+        double payRate = 25.5;
 
         //3. Multiply hours and pay rate
+        double grossPay = hours * payRate;
 
         //4. Display results
+        System.out.println("Gross pay: " + grossPay);
 
     }
 }
