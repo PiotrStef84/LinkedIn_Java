@@ -1,5 +1,7 @@
 package Getting_Started_as_a_Java_Developer.Java_Essential_Training_Syntax_and_Structure.java_essentials;
 
+import java.util.Scanner;
+
 public class GrossPayCalculator {
 
     // 2.3. Java Basics - Main method
@@ -8,7 +10,11 @@ public class GrossPayCalculator {
     public static void main(String[] args) {
 
         //1. Get the number of hours worked
-        int hours = 40;
+        int hours = 0;
+        System.out.println("How many hours did you work?");
+
+        Scanner scanner = new Scanner(System.in);
+        hours = scanner.nextInt();
 
         //2. Get the hourly pay rate
         double payRate = 25.5;
