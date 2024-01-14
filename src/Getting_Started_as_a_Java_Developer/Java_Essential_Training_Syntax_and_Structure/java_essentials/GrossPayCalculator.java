@@ -17,7 +17,11 @@ public class GrossPayCalculator {
         hours = scanner.nextInt();
 
         //2. Get the hourly pay rate
-        double payRate = 25.5;
+        double payRate = 0;
+        System.out.println("What is your pay rate?");
+        payRate = scanner.nextDouble();
+
+        scanner.close();
 
         //3. Multiply hours and pay rate
         double grossPay = hours * payRate;
