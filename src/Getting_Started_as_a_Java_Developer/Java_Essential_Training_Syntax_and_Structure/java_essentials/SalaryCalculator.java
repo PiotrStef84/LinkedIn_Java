@@ -25,6 +25,9 @@ public class SalaryCalculator {
         scanner.close();
 
         //Quick detour for the bonus earners
+        if(sales > quota){
+            salary += bonus;
+        }
 
 
         //Output
