@@ -1,4 +1,4 @@
-package Getting_Started_as_a_Java_Developer.Java_Essential_Training_Syntax_and_Structure.java_essentials;
+package Getting_Started_as_a_Java_Developer.Java_Essential_Training_Syntax_and_Structure.java_essentials.Chapter_4_decision_structures;
 
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ Salespeople who exceed 10 sales get an additional bonus of $250.
 */
 public class SalaryCalculator {
 
+    // Java Essential Training: Syntax and Structure
     // 04_01 If statements
 
     public static void main(String[] args){
