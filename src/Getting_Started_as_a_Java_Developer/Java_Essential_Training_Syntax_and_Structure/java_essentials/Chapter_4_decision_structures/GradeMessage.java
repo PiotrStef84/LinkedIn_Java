@@ -12,6 +12,8 @@ public class GradeMessage {
     // Java Essential Training: Syntax and Structure
     // 04_04 Switch statements
 
+    // 04_05 Switch expressions
+
     public static void main(String[] args){
 
         System.out.println("Enter your letter grade:");
@@ -41,6 +43,16 @@ public class GradeMessage {
                 break;
         }
 
-        System.out.println(grade);
+        System.out.println(message);
+
+        // switch expression -> streamlines the code
+
+        String message2 = switch(grade){
+            case "A", "B" -> "Excellent job!";
+            case "C" -> "Good job!";
+            case "D" -> "You need to work a bit harder";
+            case "F" -> "Uh oh!";
+            default -> "Error. Invalid grade";
+        };
     }
 }
