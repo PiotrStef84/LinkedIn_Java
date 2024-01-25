@@ -34,5 +34,25 @@ public class ChangeForADollarGame {
         int numOfQuarters = scanner.nextInt();
 
         scanner.close();
+
+        // Solution 1.
+
+//        double total = numOfPennies * penny + numOfNickels * nickel + numOfDimes * dime + numOfQuarters * quarter;
+//
+//        if(total < dollar){
+//            double amountShort = dollar - total;
+//
+//            //Way to make the decimal print with only 2 decimal places
+//            System.out.println("Sorry, you lose! You were short " + String.format("%.2f", amountShort) + " cents.");
+//        }
+//        else if(total > dollar){
+//            double amountOver = total - dollar;
+//
+//            //Way to make the decimal print with only 2 decimal places
+//            System.out.println("Sorry, you lose! You were over " + String.format("%.2f", amountOver) + " cents.");
+//        }
+//        else{
+//            System.out.println("Yay! That's exactly $1.00! You win!");
+//        }
     }
 }
