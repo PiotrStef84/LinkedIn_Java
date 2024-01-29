@@ -9,6 +9,10 @@ import java.util.Scanner;
  */
 public class GrossPayInputValidator {
 
+    // Java Essential Training: Syntax and Structure
+    // 05_01 While Loop
+
+
     public static void main(String[] args){
 
         //Initialize known variables
@@ -19,6 +23,12 @@ public class GrossPayInputValidator {
         System.out.println("How many hours did the employee work this week?");
         Scanner scanner = new Scanner(System.in);
         double hoursWorked = scanner.nextDouble();
+
+        //Validate input
+        while(hoursWorked > maxHours){
+            System.out.println("Invalid entry. Your hours must be between 1 and 40. Try again.");
+            hoursWorked = scanner.nextDouble();
+        }
 
         scanner.close();
 
